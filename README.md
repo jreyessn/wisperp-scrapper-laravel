@@ -2,7 +2,7 @@
 # Wisperp Scrapper Laravel
   
 
-Este paquete de Laravel proporciona una API sencilla para poder realizar la comunicación con el Scrapper.
+Este paquete de Laravel proporciona una API sencilla para poder realizar la comunicación con el Scrapper para Routers.
 
   
 ## Instalación
@@ -18,7 +18,7 @@ Para instalar el paquete manualmente en la carpeta `packages` de tu proyecto, si
 "repositories": [
     {
         "type": "path",
-        "url": "packages/Wisperp/wisperp-scrapper-laravel"
+        "url": "packages/wisperp/wisperp-scrapper-laravel"
     }
 ]
 ```
