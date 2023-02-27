@@ -22,14 +22,19 @@ Para instalar el paquete manualmente en la carpeta `packages` de tu proyecto, si
     }
 ]
 ```
-5 Ejecuta `composer install` en la raíz de tu proyecto
-6 Agrega el siguiente proveedor de servicios a la matriz `providers` en el archivo `config/app.php` de tu proyecto Laravel:
+5. Ejecuta `composer install` en la raíz de tu proyecto
+6. Agrega el siguiente proveedor de servicios a la matriz `providers` en el archivo `config/app.php` de tu proyecto Laravel:
 
 
 ```bash
 'providers' => [ 
 	\Wisperp\ScrapperRouters\WsrServiceProvider::class 
 ]
+```
+
+7. Ejecuta las migraciones del paquete:
+```bash
+ php artisan migrate
 ```
 
 ## Uso
