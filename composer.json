@@ -1,0 +1,23 @@
+{
+    "name": "jreyessn/scrapper-routers",
+    "description": "Abstracción de API para la comunicación con el Scrapper de los Routers de Wisperp",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "type": "lib",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Wisperp\\ScrapperRouters\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JuanR",
+            "email": "snjuank@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.3",
+        "guzzlehttp/guzzle": "^7.0.1"
+    }
+}
