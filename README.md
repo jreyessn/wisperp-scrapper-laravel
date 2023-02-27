@@ -8,14 +8,23 @@ Este paquete de Laravel proporciona una API sencilla para poder realizar la comu
 ## Instalación
   
 
-Para instalar el paquete, simplemente ejecute el siguiente comando en la terminal:
+Para instalar el paquete manualmente en la carpeta `packages` de tu proyecto, sigue los siguientes pasos:
 
- 
+1. Crea la carpeta `packages` en la raíz de tu proyecto Laravel si aún no la tienes.
+2. En la carpeta `packages`, crea una nueva carpeta con el nombre del paquete. Debería llevar el siguiente nombre de carpetas `wisperp/scrapper-routers`.
+3. Descarga el paquete y colócalo en la raíz de la carpeta que acabas de crear.
+4. Agrega el siguiente código en la sección repositories de tu archivo composer.json.
 ```bash
-composer require tu-usuario/nombre-del-paquete
+"repositories": [
+    {
+        "type": "path",
+        "url": "packages/Wisperp/wisperp-scrapper-laravel"
+    }
+]
 ```
+5 Ejecuta `composer install` en la raíz de tu proyecto
+6 Agrega el siguiente proveedor de servicios a la matriz `providers` en el archivo `config/app.php` de tu proyecto Laravel:
 
-Una vez que se haya instalado el paquete, agregue el siguiente proveedor de servicios a la matriz `providers` en el archivo `config/app.php` de su proyecto Laravel:
 
 ```bash
 'providers' => [ 
